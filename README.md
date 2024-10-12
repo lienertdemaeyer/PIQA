@@ -1,6 +1,13 @@
 # PIQA
 This repository contains the training parameters and code for finetuning BERT and RoBERTa models on the PIQA (Physical Interaction: Question Answering) dataset.
 
+## Download Model Weights
+
+You can download the model weights from the following link:
+
+[Download Model Weights](https://drive.google.com/drive/folders/1ifEm5ejkWjFLvyzZNHVTgQsWwQ46tw37?usp=drive_link)
+
+
 ## Training and Optimization Parameters
 
 | Parameter                | BERT-base | RoBERTa-base |
