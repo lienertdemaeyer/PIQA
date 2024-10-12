@@ -22,4 +22,21 @@ This repository contains the training parameters and code for finetuning BERT an
 > Figure: Training and optimization parameters for BERT-base and RoBERTa-base models.
 
 
+## Zero-shot Chain-of-Thought Prompting
+For this work **zero-shot chain-of-thought prompting technique (CoT)** was used on both GPT-4.0 and Mistral Large-2. The phrase *"Let's think step by step"* was employed to initiate the CoT process.
+## Accuracy Comparison
 
+| Category                         | Model         | Size  | Accuracy (%) Validation |
+|-----------------------------------|---------------|-------|-------------------------|
+| **Fine-Tuned Models**             | BERT-base     | 110M  | 65.9                    |
+|                                   | RoBERTa-base  | 125M  | 70.5                    |
+| **State-of-the-Art Generative Models** | GPT-4.0       | N/A   | 94.8                    |
+|                                   | GPT-4.0 (CoT)¹ | N/A   | 94.6                    |
+|                                   | Mistral Large-2 | 123B  | 89.0                    |
+|                                   | Mistral Large-2 (CoT)² | 123B | 74.8                 |
+| **Human**                         | –             | –     | 94.9 [↓2]               |
+
+> **Table**: Accuracy Comparison for BERT-base, RoBERTa-base, and State-of-the-Art Models.
+> 
+> [↓2] Yonatan Bisk, Rowan Zellers, Ronan Le Bras, Jianfeng Gao, and Yejin Choi. *PIQA: Reasoning about physical commonsense in natural language*, 2019.
+Explanation:
